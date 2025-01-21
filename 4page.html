@@ -11,6 +11,7 @@
       <div>
         <label for="First Name">First Name</label>
         <input
+          type="text"
           id="First Name"
           name="First Name"
           value="First Name"
@@ -21,6 +22,7 @@
       <div>
         <label for="Last Name">Last Name</label>
         <input
+          type="text"
           id="Last Name"
           name="Last Name"
           value="Last Name"
@@ -30,12 +32,12 @@
 
       <div>
         <label for="Email">Email</label>
-        <input id="Email" name="Email" value="Email" placeholder="Email" />
+        <input type="text" id="Email" name="Email" value="Email" placeholder="Email" />
       </div>
 
       <div>
         <label for="Phone Number">Phone Number</label>
-        <input
+        <input type="text"
           id="Phone Number"
           name="Phone Number"
           value="Phone Number"
@@ -45,57 +47,94 @@
 
       <div>
         <label for="Start Date">Start Date</label>
-        <input id="Start Date" name="Start Date" value="Start Date" />
+        <input type="text" id="Start Date" name="Start Date" value="Start Date" />
       </div>
 
       <div>
         <label for="End Date">End Date</label>
-        <input id="End Date" name="End Date" value="End Date" />
+        <input type="text" id="End Date" name="End Date" value="End Date" />
       </div>
+    </form>
+
       <hr />
+
+    <form>
       <div class="car-rental-field">
         <p>
           Car Rental <br />
           Select one
         </p>
-        <input name="yes" id="yes" type="checkbox" value="yes" />
+        <input name="yes" id="yes" type="radio" value="yes" />
         <label for="yes">Yes</label>
-        <input name="no" id="no" type="checkbox" value="no" />
+        <input name="no" id="no" type="radio" value="no" />
         <label for="no">No</label>
       </div>
-      <hr />
-      <div>
-        <p>Basic or Premium package <br />Select one</p>
-        <input name="none" id="none" type="checkbox" value="none" />
-        <label for="none">None</label>
-        <input name="Basic" id="Basic" type="checkbox" value="Basic" />
-        <label for="Basic">Basic</label>
-        <input name="Premium" id="Premium" type="checkbox" value="Premium" />
-        <label for="Premium">Premium</label>
-        <ul>
-          <li><strong>Basic Package additional $150 per person</strong></li>
-          <ul>
-            <li>1 massage</li>
-            <li>5 Soda's</li>
-            <li>5 Ice Cream in a cup</li>
-          </ul>
-        </ul>
+    </form>
 
-        <ul>
-          <li>
-            <strong style="color: red"
-              >Premium Package additional $500 per person</strong
-            >
-          </li>
+      <hr />
+
+    <form>
+      <div>
+        <p>
+          Basic, Premium, Platinum package <br />Select two (incase one sells
+          out)
+        </p>
+          <input name="none" id="none" type="checkbox" value="none" />
+          <label for="none">None</label>
+          <input name="Basic" id="Basic" type="checkbox" value="Basic" />
+          <label for="Basic">Basic</label>
+          <input name="Premium" id="Premium" type="checkbox" value="Premium" />
+          <label for="Premium">Premium</label>
+          <input name="Platinum" id="Platinum" type="checkbox" value="Platinum" />
+          <label for="Platinum">Platinum</label>
+        </div>
+
+        <div>
           <ul>
-            <li>Many massages</li>
-            <li>Soda & slushies</li>
-            <li>Ice Cream w/ sugar cone</li>
+            <li><strong>Basic Package additional $150 per person</strong></li>
+            <ul>
+              <li>1 massage</li>
+              <li>5 Soda's</li>
+              <li>5 Ice Cream in a cup</li>
+            </ul>
           </ul>
-        </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <strong style="color: red"
+                >Premium Package additional $500 per person</strong
+              >
+            </li>
+            <ul>
+              <li>5 massages</li>
+              <li>Soda & slushies</li>
+              <li>Ice Cream w/ sugar cone</li>
+            </ul>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <strong style="color: gold"
+                >Platinum Package additional $750 per person</strong
+              >
+            </li>
+            <ul>
+              <li>All you can eat restaurants</li>
+              <li>Rootbeer floats</li>
+              <li>All events</li>
+            </ul>
+          </ul>
+        </div>
       </div>
+    </form>
+
       <hr />
       <p>Airline</p>
+
       <div class="airline-field">
         <input name="delta" id="delta" type="radio" value="delta" />
         <label for="delta">Delta</label>
@@ -109,8 +148,11 @@
         <input name="lufthansa" id="lufthansa" type="radio" value="lufthansa" />
         <label for="lufthansa">Lufthansa</label>
       </div>
+
       <hr />
+
       <p>Seat selection</p>
+
       <div class="airline-field">
         <select name="airline-field">
           <option value="">Choose seat option</option>
@@ -119,15 +161,18 @@
           <option value="first-class">First class</option>
         </select>
       </div>
+
       <br />
       <br />
       <br />
       <hr />
+
       <div class="text-box-field">
         <label for="text-box-field">Please tell us about yourself:</label>
         <textarea name="info" id="info" rows="10">Type here...</textarea>
       </div>
     </form>
+
     <footer>
       <p>2025 The Marlow House. All rights reserved.</p>
       <p>Contact us:</p>
